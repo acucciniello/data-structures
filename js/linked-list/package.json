@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "linked-list.js",
   "scripts": {
-    "test": "standard && tape test/**/*.js"
+    "test": "node test-linked-list.js"
   },
   "author": "",
   "license": "ISC",
