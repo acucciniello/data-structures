@@ -1,0 +1,19 @@
+{
+  "name": "data-structures",
+  "version": "1.0.0",
+  "description": "Implementation of Basic Data Structures",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test-linked-list.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acucciniello/data-structures.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acucciniello/data-structures/issues"
+  },
+  "homepage": "https://github.com/acucciniello/data-structures#readme"
+}
