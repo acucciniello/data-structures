@@ -4,7 +4,7 @@
   "description": "Implementation of Basic Data Structures",
   "main": "index.js",
   "scripts": {
-    "test": "node test-linked-list.js"
+    "test": "node linked-list/test-linked-list.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/acucciniello/data-structures/issues"
   },
-  "homepage": "https://github.com/acucciniello/data-structures#readme"
+  "homepage": "https://github.com/acucciniello/data-structures#readme",
+  "devDependencies": {
+    "standard": "^8.6.0",
+    "tape": "^4.6.3"
+  }
 }
