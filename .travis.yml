@@ -2,5 +2,4 @@ language: node_js
 node_js:
   - '5.6.0'
 before_script: 
-cd js
-cd linked-list
+cd js/linked-list
