@@ -1,0 +1,11 @@
+{
+  "name": "linked-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "linked-list.js",
+  "scripts": {
+    "test": "node test-linked-list.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
