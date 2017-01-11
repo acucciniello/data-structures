@@ -43,25 +43,43 @@ LinkedList.prototype.length = function () {
 LinkedList.prototype.remove = function (index) {
   var previous = null
   var current = this.head
-  for (var i = 0; i <= index; i++) {
-  	previous = current
-  	current = current.next
+  console.log(this.length())
+  if (this.length() < index || index < 0) {
+    return 'The index does not exist in the Linked List'
+  } else if (this.head === null) {
+    return 'You cannot remove items from an empty list'
+  } else {
+    for (var i = 0; i <= index; i++) {
+      previous = current
+      current = current.next
+    }
+    if (current === null) {
+      previous.next = null
+    } else {
+      previous.next = current.next
+      current = null
+    }
+    return 'We removed the node of index ' + index
   }
-  previous.next = current.next
-  current = null
 }
 
 // insert a node to a specific index in list
 LinkedList.prototype.insert = function (index, node) {
   var previous = null
   var current = this.head
-  for (var i = 0; i <= index; i++) {
-    previous = current
-    current = current.next
+  if (this.length() < index || index < 0) {
+    return 'The index does not exist in the Linked List'
+  } else if (this.head === null) {
+    return 'The list is empty use push instead'
+  } else {
+    for (var i = 0; i <= index; i++) {
+      previous = current
+      current = current.next
+    }
+    previous.next = node
+    node.next = current
+    return 'Inserted a node at index ' + index + ' with value of ' + node.data
   }
-  previous.next = node
-  node.next = current
-  return
 }
 
 module.exports = LinkedList
