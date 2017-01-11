@@ -1,11 +1,18 @@
 {
   "name": "linked-list",
   "version": "1.0.0",
-  "description": "",
   "main": "linked-list.js",
   "scripts": {
-    "test": "node test-linked-list.js"
+    "test": "standard && tape test/**/*.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "standard": "^8.6.0",
+    "tape": "^4.6.3"
+  },
+  "dependencies": {
+    "tape": "^4.6.3"
+  },
+  "description": ""
 }
