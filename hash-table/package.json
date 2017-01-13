@@ -1,0 +1,14 @@
+{
+  "name": "hash-table",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hash-table.js",
+  "scripts": {
+    "test": "node test-hash-table.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tape": "^4.6.3"
+  }
+}
