@@ -4,6 +4,7 @@ var EdgeList = require('./edge-list.js')
 var Vertex = function (name, edgeList) {
   this.name = name
   this.edgeList = edgeList
+  this.visited = 0
 }
 
 Vertex.prototype.addEdge = function (location, weight) {
