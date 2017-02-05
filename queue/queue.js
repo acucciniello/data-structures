@@ -29,8 +29,13 @@ Queue.prototype.checkHead = function () {
 Queue.prototype.dequeue = function () {
   if (this.isEmpty()) {
     return null
+  } else if (this.head === this.tail) {
+    var temp = this.head
+    this.head = null
+    this.tail = null
+    return temp.data
   } else {
-    var temp = this.tail
+    temp = this.tail
     var curr = this.head
     console.log(curr)
     while (temp !== curr.next) {

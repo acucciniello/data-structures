@@ -5,6 +5,7 @@ var Vertex = function (name, edgeList) {
   this.name = name
   this.edgeList = edgeList
   this.visited = 0
+  this.parent = null
 }
 
 Vertex.prototype.addEdge = function (location, weight) {

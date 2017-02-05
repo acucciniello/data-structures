@@ -135,6 +135,7 @@ test('Create a Vertex from a EdgeList ', function (t) {
   weight = 4
   var list = vertex.addEdge(location, weight)
   t.deepEqual(list, vertex.edgeList)
+  t.equal(vertex.parent, null)
   t.end()
 })
 
@@ -249,6 +250,11 @@ test('Making a Graph and traversing it with DFT and BFT', function (t) {
   var output = []
   graph.DFT(vertexA, output)
   t.deepEqual(sequence, output, 'Depth First Traversal of Tree')
+
+  output = []
+  sequence = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
+  graph.BFT(0, output)
+  t.deepEqual(output, sequence, 'Breadth First Traversal of Tree')
 
   t.end()
 })
